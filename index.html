@@ -14,21 +14,243 @@
         <div class="footer">  
             <p>© 2026</p>  
         </div>
-    </body>
-    </html>
-    <body></body>
-<div class="header>
-    <h1>Agrinho: SemeandoEducação</div>
-        <div class=content>
-  <h2>O que é programa?</h2>
-  <p>O Agrinho é o maior programa
-    <div class="cards-
-    
+    !DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte & Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonte do Google -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
 
+    <header class="navbar">
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Nossa Missão</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    
+    <section class="hero">
+        <div class="hero-texto">
+            <h1>O campo com força, inovação e sustentabilidade.</h1>
+            <p>Conectamos a produtividade à conservação do solo, garantindo qualidade para o presente e futuro.</p>
+            <a href="#contato" class="btn-verde">Fale Conosco</a>
+        </div>
+    </section>
 
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Compromisso com o Meio Ambiente</h2>
+            <p>Acreditamos que a agricultura forte é aquela que respeita o ecossistema. Utilizamos tecnologia de ponta e técnicas regenerativas para produzir mais e melhor.</p>
+        </div>
+    </section>
 
+    <section id="praticas" class="praticas">
+        <div class="container">
+            <h2>Nossas Práticas</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Eficiência no Uso da Água</h3>
+                    <p>Uso de sistemas de irrigação inteligentes para evitar o desperdício de recursos hídricos.</p>
+                </div>
+                <div class="card">
+                    <h3>Manejo do Solo</h3>
+                    <p>Rotação de culturas e adubação orgânica para garantir um solo sempre fértil e vivo.</p>
+                </div>
+                <div class="card">
+                    <h3>Controle Biológico</h3>
+                    <p>Substituição de defensivos químicos por biológicos, promovendo um cultivo mais limpo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="footer">
+        <div class="container">
+            <p>Entre em contato: contato@agrosustentavel.com.br</p>
+            <p>&copy; 2026 AgroForte & Sustentável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+Use o código com cuidado.Código CSS (style.css)css/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #2e7d32;
+}
+
+.logo span {
+    color: #81c784;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #2e7d32;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-texto {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-texto h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-verde {
+    background-color: #2e7d32;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-verde:hover {
+    background-color: #1b5e20;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f1f8e9;
+}
+
+.sobre h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+/* Seção Práticas */
+.praticas {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.praticas h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2e7d32;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    flex: 1;
+    border-top: 5px solid #81c784;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #1b5e20;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1b5e20;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .navbar ul {
+        margin-top: 15px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .hero-texto h1 {
+        font-size: 32px;
+   ction: column;
+    }
+    .hero-texto h1 {
+        font-size: 32px;
+    }
+}
     
 
     
